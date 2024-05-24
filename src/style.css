@@ -18,23 +18,40 @@ body {
   justify-content: center;
 }
 
+.input-wrapper {
+  width: 27rem;
+  height: 3rem;
+  margin: auto;
+  position: relative;
+}
+
 .title-wrapper {
   padding-top: 5%;
 }
 
-.title-wrapper h1 {
+.title-wrapper h1,
+.input-wrapper svg,
+.input-wrapper input {
   color: white;
-  font-size: 3rem;
+}
+.title-wrapper h1 {
+  font-size: 4rem;
   font-weight: 500;
 }
 
 .input-wrapper svg {
-  width: 2rem;
-  color: white;
+  height: 3rem;
   cursor: pointer;
+  position: absolute;
+  left: 95%;
+  padding: 0;
 }
 
 .input-wrapper input {
   background-color: rgb(14, 54, 39);
   border: 1px solid white;
+  flex: 1;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 3rem;
 }
