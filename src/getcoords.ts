@@ -1,7 +1,7 @@
 import axios from "axios";
-import { apiKey, cityType } from "./main";
+import { apiKey, CityType } from "./main";
 
-export async function getCoords(currentCity: cityType) {
+export async function getCoords(currentCity: CityType) {
   const input = document.querySelector("input");
   const cityInput = (input as HTMLInputElement).value;
   const coordsUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=1&appid=${apiKey}`;
