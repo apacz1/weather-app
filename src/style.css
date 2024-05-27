@@ -5,7 +5,7 @@ html,
 }
 
 body {
-  background-color: rgb(14, 54, 39);
+  background-color: rgb(75, 75, 75);
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -23,6 +23,7 @@ body {
   height: 3rem;
   margin: auto;
   position: relative;
+  bottom: 10%;
 }
 
 .title-wrapper {
@@ -31,7 +32,9 @@ body {
 
 .title-wrapper h1,
 .input-wrapper svg,
-.input-wrapper input {
+.input-wrapper input,
+.city-wrapper h2,
+.city-wrapper div {
   color: white;
 }
 .title-wrapper h1 {
@@ -48,10 +51,42 @@ body {
 }
 
 .input-wrapper input {
-  background-color: rgb(14, 54, 39);
+  background-color: rgb(75, 75, 75);
   border: 1px solid white;
   flex: 1;
   font-size: 2rem;
   text-align: center;
   padding: 0 3rem;
+}
+
+#app {
+  height: 65vh;
+  display: flex;
+  width: 70%;
+  padding: 0 15%;
+  justify-content: center;
+}
+
+.city-wrapper *,
+.city-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.city-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-wrapper p {
+  flex: 1;
+  align-items: center;
+}
+
+.city-wrapper h2 {
+  font-size: 3rem;
+}
+
+.city-wrapper p,
+.temp {
+  font-size: 2rem;
 }
